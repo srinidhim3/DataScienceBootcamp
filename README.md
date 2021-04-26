@@ -38,3 +38,33 @@
     * P(A) + P(B) + P(C) = 1
     * A` = B + C
     * P(A`) = 1 - P(A)
+# Probability - Combinatorics
+* For starters combinatorics deals with combinations of objects from a specific finite set.
+* We will explore the three integral parts of combine matrix permutations variations and combinations.
+## Permutations ##
+* Permutations permutations represents the number of different possible ways we can arrange a set of elements.
+* Pn = n * n-1 * n-2 * ... * 1 = n!
+### Factoials ###
+* n! is the product of the natural numbers from 1 to n.
+* n! = 1 * 2 * 3 * ... * n
+* Negative numbers dont have a factorial.
+* 0! = 1
+* (n+k)! = n! * (n+1) * (n+2) * ... * (n+k)
+* (n-k)! = n! / (n-k+1) * (n-k+2) * ... * (n-k+k)
+* n > k then n! / k! = (k+1) * (k+2) * ... * n
+## Variations ##
+* Variations express the total number of ways we can pick and arrange some elements of a given set.
+* Variations = n ** p, where n is the total number of elements, we have available and p is the number of positions we need to fill.
+* The number of variations with repetition.When picking P many elements out of n elements is equal to N to the power of P.
+### Variation without repetition ###
+* Variation = n! / (n-p)!
+## Combinations ##
+* All the different permutations of a single combination are different variations.
+* Combinations = variations / permutations , C = V / P
+* C = n! / p! * (n-p)!
+* Combinations are symmetrical i.e. 10C3 = 10C7
+* The likelihood of two independent events occurring simultaneously equals the product of their individual probabilities.
+
+## With repetition ##
+* Variations = n ** p
+* Combination = (n+p-1)! / p * (n-1)!
