@@ -67,4 +67,31 @@
 
 ## With repetition ##
 * Variations = n ** p
-* Combination = (n+p-1)! / p * (n-1)!
+* Combination = (n+p-1)! / p! * (n-1)!
+## Probability Distribution ##
+*  distribution shows the possible values a variable can take and how frequently they occur.
+* probability distributions or simply probabilities measure the likelihood of an outcome depending on how often it is featured in the sample space.
+* regardless of whether we have a finite or infinite number of possibilities. We define distributions using only two characteristics mean and variance.
+* standard deviation is simply the positive square root of variance as you may suspect.
+* Types of probability distributions
+    * Discrete distributions  
+        * Uniform Distributions : all outcomes are equally likely i.e. Equiprobable.
+        * Bernoulli Distributions : Events with only two possible outcomes.
+        * Binomial Distributions : The outcomes for each iteration are two but we have many iterations.
+        * Poisson Distributions : test out how unusual an event frequency is for a given interval.
+    * Continuous distributions : the probability distribution would be a curve.
+        * Normal distributions 
+        * Student's-T distribution : limited data - A small sample approximation of normal distribution. And accommodates extreme values significantly better.
+        * Chi-Squared distributions : Asymmetric, only consists of non-negative values. used in hypothesis testng.
+        * Exponential distributions 
+        * Logistic distributions : useful in forecast analysis, and determining a cut-off point for a successful outcome.
+### Uniform Discrete distributions ##
+* X ~ U(a,b) or X ~ U(3,7) : X follows a discrete uniform distribution ranging from three to seven events which follow the Uniform Distribution are ones where all outcomes have equal probability.
+### Bernoulli Discrete distributions ##
+* X ~ Bern(p) : X follows Aber newly distribution with a probability of success equal to P.
+* one trial and two possible outcomes follows such a distribution These may include a coin flip a
+### Binomial Discrete distribution ###
+* In essence binomial events are a sequence of identical Bernoulli events.
+* X ~ B(n,p) or X ~ B(10,0.6) X follows a binomial distribution with 10 trials and a likelihood of point six to succeed
+### Poisson Discrete distributions ###
+* deals with the frequency with which an event occurs within a specific interval
