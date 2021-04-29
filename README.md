@@ -95,3 +95,7 @@
 * X ~ B(n,p) or X ~ B(10,0.6) X follows a binomial distribution with 10 trials and a likelihood of point six to succeed
 ### Poisson Discrete distributions ###
 * deals with the frequency with which an event occurs within a specific interval
+### Continuous distributions ###
+* sample space is infinite, we cannot come up with probability distribution table. But it can be represented in graph.
+* Graph is called PDF (probability density function) f(y) i.e. the associated probability for every possible value "y"
+* Cumulative distribution function (CDF) is denoted by F(y) : especially useful when we want to estimate the probability of some interval. the cumulative probability is simply the probability of the interval from negative infinity
