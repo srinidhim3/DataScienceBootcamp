@@ -99,3 +99,25 @@
 * sample space is infinite, we cannot come up with probability distribution table. But it can be represented in graph.
 * Graph is called PDF (probability density function) f(y) i.e. the associated probability for every possible value "y"
 * Cumulative distribution function (CDF) is denoted by F(y) : especially useful when we want to estimate the probability of some interval. the cumulative probability is simply the probability of the interval from negative infinity
+### Normal distribution ###
+* The graph of normal distribution is bell shaped and symmetrical from mean.
+* Expect value for normal distribution is mean value.
+* 68, 95, 99.7 law state that 68% of all outcomes fall within one standard deviation away from the mean and 95% fall within two standard deviations and 99.7 within three.
+*  transformation is a way in which we can alter every element of a distribution to get a new distribution with similar characteristics for normal distributions.
+* standardizing is a special kind of transformation in which we make the expected value equal to zero and the variance equal to one the distribution we get after standardizing any normal distribution is called a standard normal distribution.
+* In addition to these sixty eight ninety five ninety nine point seven rule a table exists which summarizes the most commonly used values for the CTF of a standard normal distribution this table is known as the standard normal distribution table or the z score table
+### Student's T distribution ###
+* t(k) : Y ~ t(3) t distribution with three degrees of freedom
+* Small sample size approximation of a normal distribution.
+* The graph of T distribution is bell shaped but with fatter tails to accommodate the occurrance of values far away from the mean.
+### Chi-Squared Distribution ###
+* Y ~ X**2(3) : a chi square distribution with three degrees of freedom
+* graph will be asymmetric
+### Exponential distribution ###
+* X ~ Exp(1/2) : variable X follows an exponential distribution with a scale of a half.
+* variables which most closely follow an exponential distribution are ones with a probability that initially decreases before eventually plateauing.
+* The PD f of such a function would start off very high and sharply decrease within the first few timeframes.
+* We require a rate parameter denoted by the Greek letter lambda. This parameter determines how fast the CTF curve reaches the point of plateauing and how spread out
+### Logistic distributions ###
+* Y ~ Logistic(6, 3) :  Y follows a logistic distribution with location 6 and a scale of 3.
+*  logistic distribution is defined by two key features. It's mean and its scale parameter the former dictates the center of the graph whilst the latter shows how spread out the graph is going to be.
