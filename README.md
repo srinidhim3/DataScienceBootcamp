@@ -121,3 +121,55 @@
 ### Logistic distributions ###
 * Y ~ Logistic(6, 3) :  Y follows a logistic distribution with location 6 and a scale of 3.
 *  logistic distribution is defined by two key features. It's mean and its scale parameter the former dictates the center of the graph whilst the latter shows how spread out the graph is going to be.
+## Probability in other fields ##
+* Finanace : calculating the probability of options going up/down
+* Statistics : predominantly focuses on samples and incomplete data.
+    * confidence intervals is that they simply approximate some margins for the mean of the entire population based on a small sample.
+    * hypothesis is an idea that can be tested. The three crucial requirements for conducting successful hypothesis testing are knowing the mean variance and type of the distribution.
+    * any distribution we try on predicts a value for all points within our dataset. This is what the distribution anticipates the actual data point to be. So it is essentially a type of anticipated average value.
+* Data Science : We usually try to analyze past data and use some insight we find to make reasonable predictions about the future furthermore in mathematical modeling we often tend to run artificial simulations. data science is an expansion of probability statistics and programming that implements computational technology to solve more advanced questions.
+## Statistics ##
+* Population : collection of all items denote by N
+* Sample : subset of the population denoted by n 
+## Descriptive statistics ##
+* Types of data 
+    * Categorical
+    * Numerical
+        * Continuous
+        * Discrete
+* Measurement level
+    * Qualitative
+        * Nominal : Categories that cannot be put in any order.
+        * Ordinal : Categories that can be put in order.
+    * Quantitative 
+        * Interval : Does not have true zero like temperature
+        * Ratio : have true zero 
+* Visualization techniques
+    * Frequency distribution tables : shows the category and its corresponding absolute frequency
+    * Bar charts : each bar represents a category
+    * Pie Charts : share of an item as part of total 
+    * Pareto diagrams : bar chart with in descending order along with cumulative frequency curve.
+        * 80-20 rule : 80% of the effect come from 20% of the causes.
+    * Cross tables and scatter plots
+        * total is calculated column and rowwise and represented using side-by-side chart.
+        * scatter plots are used while representing two numerical data and represents lot of data. good to detect outliers.
+* Measures of Central tendency : Mean, median and mode
+    * mean is simple average. most widely used.
+    * median is the middle number in ordered data set. (n+1)/2
+    * mode is the value that occurs most. can be used for categorical and numerical data. if all the data occurs only once then we can say that there is no mode.
+* Measure of asymmetry : skewness
+    * skewness is measure of asymmetry that indicates whether the observation in a dataset are concentrated on one side. it tells us where data is situated.
+        * mean > median then right skewed.
+        * mean = median = mode then distribution is symmetrical
+        * mean < median then left skewed
+* Measure of variability : variance, standard deviation, coefficient of variation.
+  * variance measures the dispersion of a set of data points around their mean.
+  * coefficient = standard deviation / mean and is needed because, comparing the standard deviations of two different data sets is meaningless. But comparing coefficients of variation is.
+* Measures of relationships between variables : covariance and correlation
+  * covariance is a measure of the joint variability of two variables. 
+    * positive covariance means two variables move together. 
+    * covariance zero means they are independent. 
+    * negative covariance means that they move in opposite direction.
+  * Correlation adjusts covariance, so that the relationship between two variables becomes easy and intuitive to interpret. covaiance can take any number but correlation ranges between -1 and 1. 
+    * correlation coefficient = covariance / std(x) * std(y)
+    * correlation does not imply causality 
