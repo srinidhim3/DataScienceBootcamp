@@ -173,3 +173,20 @@
   * Correlation adjusts covariance, so that the relationship between two variables becomes easy and intuitive to interpret. covaiance can take any number but correlation ranges between -1 and 1. 
     * correlation coefficient = covariance / std(x) * std(y)
     * correlation does not imply causality 
+## Infrential statistics ##
+* A distribution is a function that shows the possible values for a variable and how often they occur.
+* Normal and student's T distribution
+  * they approximate a wide variety of random variables. 
+  * distributions of sample means with large enough sample sizes could be approximated to normal distribution.
+  * all computable statics are elegant
+  * decisions based on normal distribution insight have a good track record.
+  * normal distribution is also called Gaussian distribution 
+* Standardization 
+  * making mean to 0 and standard variance to 1. denoted by z ~ N(0,1)
+* central limit theorem
+  * The central limit theorem states that if you have a population with mean μ and standard deviation σ and take sufficiently large random samples from the population with replacement , then the distribution of the sample means will be approximately normally distributed
+* Standard error : the variability of the means of the different samples we extracted. and standard error decreases as the sample size increases.
+* Estimates
+  * Point estimates : point estimate is located exactly in the middle of the confidence interval.
+  * confidence estimates
+  * The word statistic is the broader term a point estimate is a statistic.
