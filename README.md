@@ -201,3 +201,22 @@
   * Getting a smaller margin of error means that the confidence interval would be narrower
   * more observations there are in the sample the higher the chances of getting a good idea about the true mean of the entire population.
   * A higher statistic increases the ME. A higher standard deviation increases the ME. A higher sample size decreases the ME. Therefore: a) and c) are ambiguous. as we don’t know which effect is stronger. With b), the ME will definitely increase. In d) both statements decrease the ME.
+## Hypothesis testing ##
+* Steps in data driven decision making.
+  * formulate a hypothesis
+  * find the right test
+  * execute the test
+  * make a decision
+* Hypothesis is an idea that can be tested.
+  * Null hypothesis denoted by Ho
+    * It is the statement we are trying to reject, therefore the null is the present state of affairs while the alternative is our personal opinion.
+  * Altenative hypothesis denoted by H1 or Ha
+  * Significance level
+    * denoted by alpha : the probability of rejecting the null hypothesis, if it is true.
+    *  If the test value falls into the rejection region, you will reject the null hypothesis.
+* Type I and type II errors
+  * Type 1 error is when you reject a true null hypothesis. false positive. cause sololey depends on tester.
+  * type 2 error is when you accept a false null hypothesis. false negative. causes could be sample size.
+  * goal of hypothesis testing is to reject a false null hypothesis. probability 1-beta a.k.a power of the test.
+* P-Value : it is the smallest level of significance at which we can still reject the null hypothesis, given the observed sample statistic. you should reject the null hypothesis if p-value is less than significance level.
+* 
