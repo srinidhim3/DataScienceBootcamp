@@ -190,3 +190,14 @@
   * Point estimates : point estimate is located exactly in the middle of the confidence interval.
   * confidence estimates
   * The word statistic is the broader term a point estimate is a statistic.
+### Confidence interval ###
+* The point estimate is the midpoint of the interval.
+* confidence interval is the range within which you expect the population parameter to be.
+* common confidence levels are 90%, 95%, 99% which means alpha is 0.1, 0.05 and 0.01 respectively.
+* The Student’s T distribution approximates the Normal distribution but has fatter tails. This means the probability of values being far away from the mean is bigger. For big enough samples, the Student’s T distribution coincides with the Normal distribution.
+* when population variance is unknow we use t-statistics.
+* Margin error
+  * The true population mean falls in the interval defined by the sample mean plus minus the margin of error.
+  * Getting a smaller margin of error means that the confidence interval would be narrower
+  * more observations there are in the sample the higher the chances of getting a good idea about the true mean of the entire population.
+  * A higher statistic increases the ME. A higher standard deviation increases the ME. A higher sample size decreases the ME. Therefore: a) and c) are ambiguous. as we don’t know which effect is stronger. With b), the ME will definitely increase. In d) both statements decrease the ME.
