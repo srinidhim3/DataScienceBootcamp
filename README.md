@@ -219,4 +219,12 @@
   * type 2 error is when you accept a false null hypothesis. false negative. causes could be sample size.
   * goal of hypothesis testing is to reject a false null hypothesis. probability 1-beta a.k.a power of the test.
 * P-Value : it is the smallest level of significance at which we can still reject the null hypothesis, given the observed sample statistic. you should reject the null hypothesis if p-value is less than significance level.
-* 
+## Regression Analysis ##
+* Linear Regression is a linear approximation of a causal relationship between two or more variables.
+* simple linear regression : y = a+bx+e, y is dependent and x is independent. e is error. this is for population data but for y^ = b0 + b1 x1 is for sample data can be considered.
+* correlation vs regression
+  * correlation does not imply causation.
+  * correlation describes relationship but regression explains one variable affects the other.
+  * correlation shows movement of different variables together, but regression shows cause and effect.
+  * correlation between x and y is equal to correlation between y and x. but regression is one way.
+* The R-squared shows how much of the total variability of the dataset is explained by your regression model. This may be expressed as: how well your model fits your data. It is incorrect to say your regression line fits the data, as the line is the geometrical representation of the regression equation. It also incorrect to say the data fits the model or the regression line, as you are trying to explain the data with a model, not vice versa.
