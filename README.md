@@ -288,7 +288,11 @@
 * The R-squared shows how much of the total variability of the dataset is explained by your regression model. This may be expressed as: how well your model fits your data. It is incorrect to say your regression line fits the data, as the line is the geometrical representation of the regression equation. It also incorrect to say the data fits the model or the regression line, as you are trying to explain the data with a model, not vice versa.
 * least sum of squared error is always desired. SSE and SSR are inversly proportional.
 * Multiple linear regression - has more number of input/independent variables and y^ = b0+b1x1+b2x2+...+bnxn+e
-  * Adjusted R-Squared : it measures how much of the total variability is explained by our model. the adjusted R-squared is smaller than the R-squared. The statement is not true only in the extreme occasions of small sample sizes and a high number of independent variables.
+  * Adjusted R-Squared : it measures how much of the total variability is explained by our model. the adjusted R-squared is smaller than the R-squared. The statement is not true only in the extreme
+  occasions of small sample sizes and a high number of independent variables.
+
+  <img src="https://render.githubusercontent.com/render/math?math=R^2_{adj.} = 1 - (1-R^2)*\frac{n-1}{n-p-1}">
+
   * Multiple regressions are always better than simple ones, as with each additional variable you add, the explanatory power may only increase or stay the same.
   * We should cherry pick the data/columns when dealing with multiple linear regression as even a single unnecessary column of data will effect the models performance by a large margin. R-Squared is a good way of analyzing this but not the only tool to do so.
   * a new parameter if adding it increases Larger image R-squared but decreases adjusted Larger image R-squared then the variable can be omitted since it holds no predictive power.
@@ -300,4 +304,21 @@
     * No autocorrelation : Autocorrelation is not observed in cross-sectional data. no serial correlation, commonly seen in stock market data becuase underlying assest is same but takes up different values on each day. this can be detected in multiple ways, common way is to plot all the residuals and look for patterns, if not found then we are good. another way is Durbin-Watson test provided by statsmodels and values range between 0 and 4 representing 2 as no correlation <1 or >3 cause an alarm. There is no workaround hence better to use autoregressive or moving average or autoregressive moving average or autoregressive integrated moving average models.
     * No multicollinearity : two or more variables having high collinearity. e.g. b = 2+5b, if the collinearity is high between two variables then one can be almost represented by other hence there is no point in using both in our model. hence transforming two variables into one (e.g. average price) would potentially solve the problem.
   * Dummy variables : Categorical colums cannot be considered directly into model. hence we introduce a new variable where we immitate categorical values to numericals as part of data preprocessing.
+  * Standardization is the process of transforming data into a standard scale. i.e. sample value - mean / standard deviation.
   
+  <img src="https://render.githubusercontent.com/render/math?math=standardization = \frac{x-\mu}{\sigma}">
+
+  * Overfitting : our training has focused on the particular training set so much it has "missed the point"
+  * Underfitting : The model has not captured the underlying logic of the data.
+## Sklearn ##
+
+* Machine learning package
+* Advantages
+  * Incredible documentation
+  * variety
+    * Regression
+    * classification
+    * clustering
+    * support vector machines
+    * dimensionality reduction
+* disadvantages : deep learning
