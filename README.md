@@ -310,6 +310,7 @@
 
   * Overfitting : our training has focused on the particular training set so much it has "missed the point"
   * Underfitting : The model has not captured the underlying logic of the data.
+
 ## Sklearn ##
 
 * Machine learning package
@@ -322,3 +323,14 @@
     * support vector machines
     * dimensionality reduction
 * disadvantages : deep learning
+
+## Logistic regression ##
+
+* Logistic regression implies that the possible outcomes are not numerical but categorical.
+  * used for binary prediction.
+
+<img src="https://render.githubusercontent.com/render/math?math=Pr(Y_i=1|X_i) = {\frac{exp(\beta_0 + \beta_1X_i + \beta_2X_2 + \beta_3X_3 + \beta_4X_4 + \beta_5X_5)}{1 + exp (\beta_0 + \beta_1X_i + \beta_2X_2 + \beta_3X_3 + \beta_4X_4 + \beta_5X_5)}}
+">
+
+* Maximum likelihood estimation : its a function which estimates the likely it is that the model at hand describes the real underlying relationship of the variables. Computer is going through different values until it finds a model for which the liklihood is the highest and when it can no longer improve it, it will just stop the optimization. another meric is log-likelihood which can be consider the bigger value the better model it is. LL-Null is the log likelihood of a model which has no independent variables. LLR p-value measures if our model is statistically different from LL-Null, a.k.a useless model.
+
