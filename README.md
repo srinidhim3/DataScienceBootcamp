@@ -340,4 +340,29 @@
 * applications
   * Market segmentation
   * Image segmentation
-
+## K-Means clustering ##
+* steps
+  * choose the number of cluster (K)
+  * specify the cluster seeds
+  * assign each point to a centroid
+  * adjust the centroid and reiterate from step 3
+* How to choose right amount of clusters ?
+  * Within cluster sum of squares or WCSS : is a measure developed within the ANOVA framework. if we minimize WCSS then we have reached the perfect clustering solution.
+    * Analysis of variance (ANOVA) is a tool used to partition the observed variance in a particular variable into components attributable to different sources of variation. Analysis of variance (ANOVA) uses the same conceptual framework as linear regression.
+  * Elbow method 
+* Advantages
+  * simple to understand
+  * Fast to cluster
+  * Widely available in many modules
+  * Easy to implement
+  * Always yields a result
+* Disadvantages
+  * we need to pick K, the elbow method helps in this case.
+  * sensitive to initialization, solution is k-means++
+  * sensitive to outliers, hence need to remove the outliers in data pre-processing. 
+  * produces spherical solutions
+  * standardization, if we know that one column data is more important than other then standardization should not be used.
+* Types of analysis
+  * Exploratory : get acquainted with data, search for patterns, plan
+  * Confirmatory : explain a phenomenon, confirm a hypothesis, validate previous research
+  * Explanatory : explain a phenomenon, confirm a hypothesis, validate previous research
