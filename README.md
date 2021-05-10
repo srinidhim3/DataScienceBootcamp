@@ -366,3 +366,13 @@
   * Exploratory : get acquainted with data, search for patterns, plan
   * Confirmatory : explain a phenomenon, confirm a hypothesis, validate previous research
   * Explanatory : explain a phenomenon, confirm a hypothesis, validate previous research
+* Types of clustering
+  * Flat : K-Means
+  * Hierarchical : Taxonom of the animal kingdom
+    * Agglomerative (bottom-up) : Dendrogram 
+      * shows all the possible linkage between clusters
+      * we understand the data much better
+      * No need to preset the number of clusters
+      * Many methods to perform hierarchical clustering (Ward)
+      * Computation intensive
+    * Divisive (top-down)
