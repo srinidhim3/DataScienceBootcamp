@@ -334,3 +334,10 @@
 
 * Maximum likelihood estimation : its a function which estimates the likely it is that the model at hand describes the real underlying relationship of the variables. Computer is going through different values until it finds a model for which the liklihood is the highest and when it can no longer improve it, it will just stop the optimization. another meric is log-likelihood which can be consider the bigger value the better model it is. LL-Null is the log likelihood of a model which has no independent variables. LLR p-value measures if our model is statistically different from LL-Null, a.k.a useless model.
 
+## Cluster analysis ##
+* cluster analysis is a multivariate statistical technique that groups observations on the basis some of their features or variables they are described by.
+* the goal of clustering is to maximize the similarity of observations within a cluster and maximize the dissimilarity between cluster.
+* applications
+  * Market segmentation
+  * Image segmentation
+
