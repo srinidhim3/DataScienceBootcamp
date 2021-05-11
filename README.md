@@ -376,3 +376,19 @@
       * Many methods to perform hierarchical clustering (Ward)
       * Computation intensive
     * Divisive (top-down)
+
+## Mathematics : Linear Algebra ##
+* Matrix : It is a collection of numbers ordered in rows and columns. matrix can only contain numbers, symbols or equations.
+* Vectors and scalars :
+  * a matrix with one row and one column is called scalar. represented by a point.
+  * a vector has either one column or one row. simplest linear algebraic object. represented by a line.
+    * Column vector
+    * row vector 
+  * length of vector is the number of elements in it.
+* for addition or subtraction of two matrices the shape of them should be same.
+* for multiplication of vectors the length of vectors should be the same. we can only multiply an m*n matrix with an n*k matrix meaning number of columns in first matrix should be equal to number of rows in second matrix.
+* A tensor is generalization of the above concepts like scalars, vector and matrix
+* scalar is tensor of rank 0,  vector is tensor of rank 1 and matrix is tensor of rank 2.
+
+
+
