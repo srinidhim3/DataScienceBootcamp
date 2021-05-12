@@ -389,6 +389,18 @@
 * for multiplication of vectors the length of vectors should be the same. we can only multiply an m*n matrix with an n*k matrix meaning number of columns in first matrix should be equal to number of rows in second matrix.
 * A tensor is generalization of the above concepts like scalars, vector and matrix
 * scalar is tensor of rank 0,  vector is tensor of rank 1 and matrix is tensor of rank 2.
-
-
-
+## Deep learning ##
+* basic logic behind training a model.
+  * Data
+  * Model
+  * Objective function : it is the measure used to evaluate how well the model output match the desired correct values.
+    * Loss function : lower the loss function the higher the level of accuracy. any function that holds the basic property of higher for worse results, lower for better results can be a loss function 
+      * L2-Norm : used in regression model. Norm comes from the fact it is the vector norm, or euclidean distance of the outputs and the targets
+      * Coss Entropy : used in classification.
+    * Reward function : Higher the reward function the higher the level of accuracy.
+  * Optimization alogirthm 
+    * Gradient descent : The gradient is a mathematical term. It is the multivariate generalization of the derivative concept.
+      * eta is the learning rate 
+      * oscillation : a repetitive variation around a central value.
+      <img src="https://render.githubusercontent.com/render/math?math=x_{i 1}=x_i-n f`(x_i)">
+      * generally we want the learning rate to be high enough so we can reach the closest minimum in a rational amount of time and low enough so we don't oscillate around minimum.
