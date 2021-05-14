@@ -1,6 +1,6 @@
 # Data Science Bootcamp Notes
 
-# Probability #
+## Probability ##
 
 * Definition : the likelihood of an event occurring. Example flipping a coin has two possible outcomes, heads or tails. In other words quantifying how likely each event is on its own.
 * P(A) = Preferred outcome / all outcomes, where A is event and P is the probability.
@@ -48,7 +48,7 @@
   * A` = B + C
   * P(A`) = 1 - P(A)
 
-# Probability - Combinatorics
+## Probability - Combinatorics ##
 
 * For starters combinatorics deals with combinations of objects from a specific finite set.
 * We will explore the three integral parts of combine matrix permutations variations and combinations.
@@ -404,3 +404,25 @@
       * oscillation : a repetitive variation around a central value.
       <img src="https://render.githubusercontent.com/render/math?math=x_{i 1}=x_i-n f`(x_i)">
       * generally we want the learning rate to be high enough so we can reach the closest minimum in a rational amount of time and low enough so we don't oscillate around minimum.
+## TensorFlow ##
+* uses CPU and GPU interms of hardware.
+* used to create neural networks / deep learning.
+* Keras is integrated with tensorflow in 2017 and can be considered as an interface for tensorflow rather than a different library.
+* The Huber loss is more appropriate than the L2-norm when we have outliers, as it is less sensitive to them
+* Layer
+  * Layers are building blocks of the neural networks. and when we have more than one layer then we are talking about a deep neural network.
+  * Mixing linear combinations and non linearities allows us to model arbitrary functions. its noteworthy that non-linearities don't change the shape of the expression, just its linearity. Non linearities are needed so we can break the linearity and represent more complicated relationships.
+  * Sigmoid function is one of the example for non linear operation.
+  * All the layers apart from input and output layers are called hidden layers.
+  * Width is the number of tensor units in a single layer.
+  * Depth is the number of hidden layers.
+  * Width and depth are called hyperparameters along with few others like learning rate.
+  * Two consecutive linear transformations are equivalent to as single one. hence when we know that the relationship between input and output  variables are linear there is no need to build a model for those explicitly. conversely in order to have deep nets and find complex relationships through arbitrary functions, we need non-linearities.
+  * Activation functions / Transfer functions: in machine learning context non-linearities are called activation functions. it transforms inputs into a outputs of a different kind.
+    * Sigmoid (logistic function): outputs will be contained between 0 and 1.
+    * TanH (hyperbolic tangent) : outputs will be contained between -1 and 1.
+    * ReLu (rectified linear unit) : outputs will be contained between 0 and infinity.
+    * Softmax : outputs will be contained between 0 and 1. and depends on the entire data set of input variables unlike sigmoid. also the sum of output is always 1. conversely Softmax transformations transforms a bunch of arbitrary large or small numbers into a valid probability distribution becuase the sum of output is always 1.
+  * All the above activation functions are monotonic, continuous and differentiable.
+  * Back propagation : at the end of each epoch we back propagate and change each parameter accordingly based (ouput - target) on deltas using differential equations.
+  * The algorithm adjusts the weights that have a bigger contribution to the errors by more, and the weights that have a smaller contribution to the errors by less. adding to the complexity of back propagation is activation function hence this is considered biggest challenge in deep learning.
