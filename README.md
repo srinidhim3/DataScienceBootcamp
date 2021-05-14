@@ -404,7 +404,7 @@
       * oscillation : a repetitive variation around a central value.
       <img src="https://render.githubusercontent.com/render/math?math=x_{i 1}=x_i-n f`(x_i)">
       * generally we want the learning rate to be high enough so we can reach the closest minimum in a rational amount of time and low enough so we don't oscillate around minimum.
-## TensorFlow ##
+## Neural networks ##
 * uses CPU and GPU interms of hardware.
 * used to create neural networks / deep learning.
 * Keras is integrated with tensorflow in 2017 and can be considered as an interface for tensorflow rather than a different library.
@@ -426,3 +426,11 @@
   * All the above activation functions are monotonic, continuous and differentiable.
   * Back propagation : at the end of each epoch we back propagate and change each parameter accordingly based (ouput - target) on deltas using differential equations.
   * The algorithm adjusts the weights that have a bigger contribution to the errors by more, and the weights that have a smaller contribution to the errors by less. adding to the complexity of back propagation is activation function hence this is considered biggest challenge in deep learning.
+* Validation : its a part of dataset like training and test but helps us prevent overfitting. we just calculate the validation loss and do not back propagate. on average it should euqal the training loss. This new loss is called validation loss. the way we can detect this is by looking at loss value while feeding validation dataset and at any epoch if the loss starts increasing then the model can be considered as overfitting. 80,10, 10 or 70, 20, 10 percent is the usual data volume split between training, validation and test dataset. we will validate the model for epoch.
+* N-Fold cross validation : In this case we will consider the training and validation dataset together. if there are 10k records then 9k would be training and 1k for validation. in the iterations of epochs a chunk of data is considered for validation like for first epoch first 1k records and for second epoch records from 1k-2k are considered for validation. This comes with the price which is we end up training the model on validation data as well in different epochs.
+* Early stopping : we want to stop training early before we overfit. below are ways of doing it.
+  * Preset the number of epochs, but this would not guarantee that the min is reached or may be doen't minimize at all.
+  * stop when updates become too small. if the difference in loss value between epochs is 0.001. this saves computing power.
+  * validation set strategy : divide the dataset into training, validation and test datasets.
+* Initialization : it is the process in which we set the initial values of weights.
+  
