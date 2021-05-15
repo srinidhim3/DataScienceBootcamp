@@ -433,4 +433,16 @@
   * stop when updates become too small. if the difference in loss value between epochs is 0.001. this saves computing power.
   * validation set strategy : divide the dataset into training, validation and test datasets.
 * Initialization : it is the process in which we set the initial values of weights.
-  
+## Gradient Descent ##
+* gradient descent iterates over entire dataset and updates the weights which will become slow for huge datasets. and also we cannot choose higher learning rate because it might create oscillation.
+* Stochastic gradient descent is a method which will update the weights in realtime i.e. inside the epoch. the data is divided into multiple mini batches and for each batch the weights are updated. This gives better performance but little bit accuracy is compromised.
+* gradient descent another disadvantage is that it falls prey to local minimum rather than global minimum.
+* momentum : it accounts for the fact that the loss is actually going down.
+* Learning rate schedules :
+  * we start from a high initial learning rate.
+  * at some point we lower the rate to avoid oscillation.
+  * around the end we pick a very small rate to get a precise answer.
+* Advanced learning rate schedules
+  * AdaGrad : adaptive gradient descent.
+  * RMSProp : root mean square propogation.
+  * ADAM : adaptive momemt estimation. 
